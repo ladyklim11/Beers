@@ -38,17 +38,16 @@ const Filters = () => {
         onClick={handleChangeFilters}
       >
         {filters.showOnlyLiked
-          ? <FavoriteIcon className={styles.Icon} />
-          : <FavoriteBorderIcon className={styles.Icon} />
+          ? <FavoriteIcon />
+          : <FavoriteBorderIcon  />
         }
-        <span>Избранные</span>
       </Button>
       <Button
         variant="outlined"
         onClick={handleClearBlacklist}
         disabled={blacklist.length === 0}
       >
-        <span>Очистить черный список</span>
+        <span>Вернуть удаленные</span>
       </Button>
     </div>
   )

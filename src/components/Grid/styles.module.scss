@@ -1,7 +1,19 @@
 
 .Grid {
   display: grid;
-  margin: 25px 40px 25px 25px;
+  margin: 25px;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 526px) {
+    grid-template-columns: 1fr;
+  }
 }
